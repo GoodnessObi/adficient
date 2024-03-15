@@ -1,0 +1,19 @@
+{
+  "name": "adficient",
+  "version": "1.0.0",
+  "description": "tryzepatide landing page",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GoodnessObi/adficient.git"
+  },
+  "author": "Goodness Obi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GoodnessObi/adficient/issues"
+  },
+  "homepage": "https://github.com/GoodnessObi/adficient#readme"
+}
