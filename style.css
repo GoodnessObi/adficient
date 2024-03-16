@@ -586,6 +586,14 @@ video {
   position: relative;
 }
 
+.left-4 {
+  left: 1rem;
+}
+
+.top-\[-45px\] {
+  top: -45px;
+}
+
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -599,12 +607,48 @@ video {
   margin-top: 1rem;
 }
 
+.mt-\[-200px\] {
+  margin-top: -200px;
+}
+
+.mt-\[-100px\] {
+  margin-top: -100px;
+}
+
 .inline-block {
   display: inline-block;
 }
 
 .flex {
   display: flex;
+}
+
+.grid {
+  display: grid;
+}
+
+.min-h-\[1000px\] {
+  min-height: 1000px;
+}
+
+.min-h-\[1042px\] {
+  min-height: 1042px;
+}
+
+.min-h-\[1108px\] {
+  min-height: 1108px;
+}
+
+.min-h-\[1412px\] {
+  min-height: 1412px;
+}
+
+.min-h-\[1433px\] {
+  min-height: 1433px;
+}
+
+.min-h-\[1606px\] {
+  min-height: 1606px;
 }
 
 .min-h-\[400px\] {
@@ -615,8 +659,40 @@ video {
   min-height: 613px;
 }
 
+.min-h-\[896px\] {
+  min-height: 896px;
+}
+
+.min-h-\[943px\] {
+  min-height: 943px;
+}
+
+.min-h-\[992px\] {
+  min-height: 992px;
+}
+
+.min-h-\[750px\] {
+  min-height: 750px;
+}
+
+.min-h-\[780px\] {
+  min-height: 780px;
+}
+
 .w-full {
   width: 100%;
+}
+
+.grid-cols-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.grid-cols-3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.grid-rows-3 {
+  grid-template-rows: repeat(3, minmax(0, 1fr));
 }
 
 .flex-row {
@@ -639,8 +715,25 @@ video {
   justify-content: space-between;
 }
 
+.gap-4 {
+  gap: 1rem;
+}
+
 .gap-8 {
   gap: 2rem;
+}
+
+.gap-6 {
+  gap: 1.5rem;
+}
+
+.gap-x-10 {
+  -moz-column-gap: 2.5rem;
+       column-gap: 2.5rem;
+}
+
+.gap-y-10 {
+  row-gap: 2.5rem;
 }
 
 .divide-x-2 > :not([hidden]) ~ :not([hidden]) {
@@ -671,9 +764,9 @@ video {
   border-top-color: rgb(252 165 165 / var(--tw-border-opacity));
 }
 
-.bg-blue-100 {
+.bg-\[\#c9e5ff\] {
   --tw-bg-opacity: 1;
-  background-color: rgb(219 234 254 / var(--tw-bg-opacity));
+  background-color: rgb(201 229 255 / var(--tw-bg-opacity));
 }
 
 .bg-white {
@@ -681,12 +774,56 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
+.bg-\[url\(\'\.\/images\/stethoscope\.png\'\)\] {
+  background-image: url('./images/stethoscope.png');
+}
+
+.bg-bedroom-bg {
+  background-image: url('./images/bedroom_bg.png');
+}
+
+.bg-faq-bg {
+  background-image: url('./images/bg_curved2.png');
+}
+
 .bg-footer-bg {
   background-image: url('./images/footer.png');
 }
 
+.bg-gym-bg {
+  background-image: url('./images/gym_bg.png');
+}
+
+.bg-hero-bg {
+  background-image: url('./images/hero_bg.png');
+}
+
+.bg-livingroom-bg {
+  background-image: url('./images/livingroom_bg.png');
+}
+
+.bg-main-bg {
+  background-image: url('./images/bg_curved1.png');
+}
+
+.bg-stools-bg {
+  background-image: url('./images/blurred-blue-stools.png');
+}
+
+.bg-contain {
+  background-size: contain;
+}
+
 .bg-cover {
   background-size: cover;
+}
+
+.bg-bottom {
+  background-position: bottom;
+}
+
+.bg-right-bottom {
+  background-position: right bottom;
 }
 
 .bg-no-repeat {
@@ -703,24 +840,19 @@ video {
   padding-right: 2rem;
 }
 
-.py-10 {
-  padding-top: 2.5rem;
-  padding-bottom: 2.5rem;
+.py-32 {
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+}
+
+.py-40 {
+  padding-top: 10rem;
+  padding-bottom: 10rem;
 }
 
 .py-6 {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
-}
-
-.py-12 {
-  padding-top: 3rem;
-  padding-bottom: 3rem;
-}
-
-.py-32 {
-  padding-top: 8rem;
-  padding-bottom: 8rem;
 }
 
 .pl-4 {
@@ -729,6 +861,14 @@ video {
 
 .pr-4 {
   padding-right: 1rem;
+}
+
+.pt-40 {
+  padding-top: 10rem;
+}
+
+.pt-\[119px\] {
+  padding-top: 119px;
 }
 
 .text-center {
@@ -743,16 +883,12 @@ video {
   font-size: 23px;
 }
 
-.text-\[33px\] {
-  font-size: 33px;
-}
-
 .text-\[27px\] {
   font-size: 27px;
 }
 
-.text-\[22px\] {
-  font-size: 22px;
+.text-\[33px\] {
+  font-size: 33px;
 }
 
 .font-semibold {
