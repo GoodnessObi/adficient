@@ -9,14 +9,11 @@
 			href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
 			rel="stylesheet"
 		/>
-
-		<!-- <script src="https://cdn.tailwindcss.com"></script>
-		<link rel="stylesheet" href="./globals.css" /> -->
 		<link rel="stylesheet" href="./style.css" />
 		<title>Tryzepatide</title>
 	</head>
 	<body>
-		<div class="relative">
+		<div class="relative overflow-hidden">
 			<header class="absolute bg-white w-full py-6">
 				<div class="container flex flex-row justify-between items-center">
 					<div class="w-1/3">
@@ -48,21 +45,44 @@
 			<section
 				class="pt-[119px] bg-hero-bg bg-cover bg-no-repeat min-h-[1000px]"
 			>
-				<div class="container mx-auto grid grid-cols-3">
-					<img src="./images//botle_straight.png" alt="" />
-					<div>
-						<p class="">Achieve your weight goal</p>
-						<h1>Tirzepatide <span>Delivered to your door</span></h1>
-						<p>Weight Management Medication</p>
-						<p>
-							Get connectected with a doctor who can prescribe Tirzepatide if
-							it's suitable for you
-						</p>
-						<p>for only $499 per month</p>
-						<button class="button">Get Started Now</button>
+				<div class="container h-full grid place-items-center mt-12">
+					<div class="grid xl:grid-cols-[0.8fr_2fr_1fr]">
+						<div class="w-2/3 xl:w-full mt-8 self-end">
+							<img src="./images/botle_straight.png" alt="" class="" />
+						</div>
+
+						<div class="-order-1 xl:order-1 self-end">
+							<p class="text-base">Achieve your weight goal</p>
+							<h1 class="text-6xl capitalize text-primary w-full lg:w-2/3">
+								Tirzepatide
+								<span class="font-bold">Delivered to your door</span>
+							</h1>
+							<p
+								class="bg-[#C7FD79] text-primary rounded-xl w-fit px-4 py-1 mt-4 mb-4"
+							>
+								Tirzepatide is a weight-loss medication
+							</p>
+							<p class="text-lg w-1/2 sm:2/3">
+								Get connectected with a doctor who can prescribe Tirzepatide if
+								it's suitable for you
+								<span class="text-2xl text-[#05b6dc] font-semibold"
+									>for only $499 per month</span
+								>
+							</p>
+
+							<button class="button !hidden lg:!inline-block mt-8">
+								Get Started Now
+							</button>
+
+							<div
+								class="absolute top-[280px] lg:top-[100px] right-[-100px] w-3/4 sm:w-1/2 float-right overflow-hidden"
+							>
+								<img src="./images/woman_gymwear.png" alt="" />
+							</div>
+						</div>
 					</div>
-					<div>
-						<img src="./images//woman_gymwear.png" alt="" />
+					<div class="lg:hidden flex justify-center mt-8">
+						<button class="button">Get Started Now</button>
 					</div>
 				</div>
 			</section>
@@ -287,10 +307,10 @@
 				</div>
 			</section> -->
 
-			<!-- <section
+			<section
 				class="bg-contain bg-no-repeat bg-faq-bg bg-bottom min-h-[1412px] grid gap-y-10"
 			>
-				<div class="container mx-auto border-4 grid grid-cols-2">
+				<!-- <div class="container mx-auto border-4 grid grid-cols-2">
 					<div class="flex flex-row">
 						<div>
 							<img src="./images/woman_on_chair.png" alt="" />
@@ -312,9 +332,11 @@
 						<p>Compouned Tirzepatide Prescribed Online</p>
 						<p>for ony $499 per month</p>
 					</div>
-				</div>
+				</div> -->
 
-				<div class="container mx-auto border-4 grid grid-cols-2 min-h-[1000px]">
+				<div
+					class="container mx-auto border-4 grid xl:grid-cols-2 min-h-[1000px]"
+				>
 					<div>
 						<h2>Frequently Asked Questions</h2>
 						<p>
@@ -332,30 +354,63 @@
 						<button class="button">Rush my order</button>
 					</div>
 				</div>
-			</section> -->
+			</section>
+			<section class="xl:hidden">
+				<div class="container">
+					<h2 class="text-[81.28pt] text-primary leading-none mb-4">
+						<span class="text-[27.09pt] text-black"
+							>Achieve your weight goal</span
+						>
+						<span class="font-light">Tirzepatide</span> Weight Loss
+					</h2>
 
-			<!-- <section class="border border-solid border-t-red-300 min-h-[1108px]">
-				<div class="container mx-auto border-4 flex flex-row">
-					<div>
-						<img src="./images/running_ladies.png" alt="" />
+					<div class="grid grid-cols-[1.8fr_1fr] items-center pb-8">
+						<div>
+							<h3 class="uppercase text-[31.07pt] font-medium">Tryzepatide</h3>
+							<p class="text-[30.4pt] font-light">
+								Compouned Tirzepatide Prescribed Online
+							</p>
+							<p class="text-[37.41pt] font-medium">for ony $499 per month</p>
+							<button class="button mt-4">Order now</button>
+						</div>
+						<img src="./images/botle_straight.png" alt="" />
 					</div>
-					<div>
-						<h2>
-							<span>Achieve your weight goal</span>
-							<span>Tirzepatide</span> Weight Loss
+				</div>
+			</section>
+			<section
+				class="relative -z-[1] xl:mt-[-50px] bg-running_bg_mobile xl:bg-running_bg bg-right-bottom xl:bg-center bg-no-repeat bg-contain xl:bg-cover h-[531px] xl:h-[1121px]"
+			>
+				<div
+					class="container h-full grid grid-cols-[1.8fr_1fr] xl:grid-cols-2 place-items-center"
+				>
+					<div class=""></div>
+					<div class="-order-1 xl:order-1">
+						<h2
+							class="hidden xl:block text-[81.28pt] text-primary leading-none mb-4"
+						>
+							<span class="text-[27.09pt] text-black"
+								>Achieve your weight goal</span
+							>
+							<span class="font-light">Tirzepatide</span> Weight Loss
 						</h2>
-						<p>
+						<p class="text-[24.43pt] 2xl:text-[28pt] mb-4 leading-2">
 							Tirzepatide, the active pharmaceutical ingredient in Zepbound™,
 							has helped thousands of people successfully reduce and manege
 							their weight in conjunction with diet and exercise.
 						</p>
 
-						<p>Compouned Tirzepatide Prescribed Online</p>
-						<p>for ony $499 per month</p>
-						<button class="button">Rush my order</button>
+						<p class="hidden xl:block text-[30.4pt] font-light">
+							Compouned Tirzepatide Prescribed Online
+						</p>
+						<p class="hidden xl:block text-[37.41pt] font-medium">
+							for ony $499 per month
+						</p>
+						<button class="button mt-4 !hidden xl:!inline-block">
+							Rush my order
+						</button>
 					</div>
 				</div>
-			</section> -->
+			</section>
 
 			<footer class="bg-footer-bg bg-cover bg-no-repeat min-h-[613px]">
 				<div class="container py-32">

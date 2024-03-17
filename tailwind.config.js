@@ -29,6 +29,8 @@ module.exports = {
 				'gym-bg': "url('./images/gym_bg.png')",
 				'main-bg': "url('./images/bg_curved1.png')",
 				'hero-bg': "url('./images/hero_bg.png')",
+				running_bg: "url('./images/running_bg.png')",
+				running_bg_mobile: "url('./images/running_bg_mobile.png')",
 			},
 		},
 	},
