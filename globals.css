@@ -92,3 +92,41 @@ h1 {
 		opacity: 1;
 	} */
 /* } */
+
+.img_container {
+	grid-area: image;
+}
+
+.heading {
+	grid-area: header;
+}
+
+.cards {
+	grid-area: card;
+}
+
+.section_trendy {
+	display: grid;
+	grid-template-rows: auto;
+
+	grid-template-areas:
+		'header'
+		'image'
+		'card';
+}
+/* 
+@media all and (min-width: 1024px) {
+	.section_trendy {
+		grid-template-areas:
+			'image image image image header header header header header'
+			'image image image image card card card card card';
+	}
+} */
+
+@media all and (min-width: 1024px) {
+	.section_trendy {
+		grid-template-areas:
+			'image image image image header header header header header'
+			'image image image image card card card card card';
+	}
+}
