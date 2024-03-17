@@ -10,6 +10,16 @@ module.exports = {
 			colors: {
 				primary: '#154ec6',
 			},
+			container: {
+				center: true,
+				padding: {
+					DEFAULT: '1rem',
+					sm: '2rem',
+					lg: '4rem',
+					xl: '5rem',
+					'2xl': '6rem',
+				},
+			},
 			backgroundImage: {
 				'footer-bg': "url('./images/footer.png')",
 				'faq-bg': "url('./images/bg_curved2.png')",
