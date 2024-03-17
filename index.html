@@ -14,7 +14,7 @@
 	</head>
 	<body>
 		<div class="relative overflow-hidden">
-			<header class="absolute bg-white w-full py-6">
+			<header class="absolute bg-white w-full py-4">
 				<div class="container flex flex-row justify-between items-center">
 					<div class="w-1/3">
 						<a
@@ -31,7 +31,7 @@
 					<div
 						class="hidden xl:flex flex-row items-center justify-between w-full"
 					>
-						<div class="flex flex-row gap-8 items-center text-[23px] uppercase">
+						<div class="flex flex-row gap-8 items-center text-lg uppercase">
 							<a href="#">How does it work</a>
 							<a href="#">For whom</a>
 							<a href="#">Faq</a>
@@ -41,7 +41,7 @@
 					</div>
 				</div>
 			</header>
-
+			<!-- hero / section 1 -->
 			<section
 				class="pt-[119px] bg-hero-bg bg-cover bg-no-repeat min-h-[1000px]"
 			>
@@ -75,7 +75,7 @@
 							</button>
 
 							<div
-								class="absolute top-[280px] lg:top-[100px] right-[-100px] w-3/4 sm:w-1/2 float-right overflow-hidden"
+								class="absolute top-[280px] lg:top-[60px] right-[-100px] w-3/4 sm:w-1/2 float-right overflow-hidden"
 							>
 								<img src="./images/woman_gymwear.png" alt="" />
 							</div>
@@ -90,6 +90,7 @@
 			<section
 				class="bg-main-bg bg-no-repeat bg-contain mt-[-100px] min-h-[1433px]"
 			>
+				<!-- section 2 -->
 				<section class="bg-stools-bg bg-cover bg-no-repeat min-h-[943px]">
 					<div class="section_trendy container mx-auto pt-40 gap-x-10">
 						<div class="relative img_container grid grid-cols-2">
@@ -174,6 +175,7 @@
 					</div>
 				</section>
 
+				<!-- section 3  -->
 				<section class="py-40">
 					<div class="container xl:hidden mb-20">
 						<div class="grid gap-8">
@@ -240,22 +242,32 @@
 					</div>
 				</section>
 
+				<!-- section 4 -->
 				<section
-					class="bg-gym-bg bg-no-repeat bg-cover min-h-[896px] border border-solid border-t-red-300"
+					class="bg-gym-bg bg-no-repeat bg-cover bg-top lg:bg-center min-h-[896px]"
 				>
-					<div class="container border-4">
-						<h2>
+					<div class="container">
+						<h2 class="text-5xl font-normal text-center mb-10">
 							Meet Our Chief Medical Officer
-							<span>who loast 40 Pounds with Tirzepatide!</span>
+							<span
+								class="text-primary font-medium tracking-wider leading-[1.2px]"
+								>who loast 40 Pounds with Tirzepatide!</span
+							>
 						</h2>
-						<div class="grid grid-cols-2">
-							<div>
+						<div class="flex flex-col lg:flex-row justify-between items-center">
+							<div class="lg:w-1/2 flex flex-col items-center my-10 lg:my-0">
 								<img src="./images/video_placeholder.png" alt="" />
 								<button class="button">Order now</button>
 							</div>
 
-							<div>
-								<img src="./images/drkyle_testimonial.png" alt="" />
+							<div
+								class="relative lg:w-1/2 flex justify-end -order-1 lg:order-1 pb-60 xl:pb-0"
+							>
+								<img
+									src="./images/drkyle_testimonial.png"
+									alt=""
+									class="absolute bottom-0 left-[-20px]"
+								/>
 								<img src="./images/befor-after.png" alt="" />
 							</div>
 						</div>
@@ -263,31 +275,92 @@
 				</section>
 			</section>
 
-			<!-- 		
-			<section class="border border-solid border-t-red-300 min-h-[400px]">
-				<div class="container mx-auto border-4">
-					<h2>3-Step Approach <span>For Simplified Weight Loss</span></h2>
-					<div class="grid grid-cols-2">
-						<div class="grid grid-cols-2">
-							<img src="./images/easy_process.png" alt="">
-							<img src="./images/woman_with_notepad.png" alt="">
+			<!-- section 5 -->
+			<section class="bg-3Step_bg bg-no-repeat bg-cover py-20 min-h-[400px]">
+				<div class="container">
+					<h2 class="text-5xl font-normal text-center mb-20">
+						3-Step Approach
+						<span
+							class="text-primary font-medium tracking-wider leading-[1.2px]"
+							>For Simplified Weight Loss</span
+						>
+					</h2>
+					<div class="flex flex-col lg:flex-row gap-10 justify-between">
+						<div class="relative flex justify-end lg:w-2/5">
+							<img
+								src="./images/easy_process.png"
+								alt=""
+								class="absolute left-[-20px] top-[-45px]"
+							/>
+							<img src="./images/woman_with_notepad.png" alt="" />
 						</div>
 
-						<div>
+						<div class="lg:w-3/5">
+							<div class="grid grid-rows-3 gap-8">
+								<div
+									class="bg-white bg-step1_bg_mobile md:bg-step1_bg bg-no-repeat bg-cover bg-right min-h-[534px] md:min-h-[198px] p-8 rounded-xl shadow-md flex items-start md:items-center"
+								>
+									<div class="md:w-2/3 flex flex-row gap-12 md:items-center">
+										<div class="flex flex-row items-center gap-4">
+											<img src="./images/step_text.png" alt="" />
+											<p class="text-3xl">1</p>
+										</div>
+										<div class="flex flex-col justify-center">
+											<h4>Answer some questions to see if you're eligible</h4>
+											<p>
+												Lorem ipsum dolor sit amet consectetur adipisicing elit.
+												Architecto, tempore.
+											</p>
+										</div>
+									</div>
+								</div>
+								<div
+									class="bg-white bg-step2_bg_mobile md:bg-step2_bg bg-no-repeat bg-cover min-h-[534px] md:min-h-[198px] p-8 rounded-xl shadow-md flex items-start md:items-center justify-end"
+								>
+									<div
+										class="md:w-2/3 flex flex-row gap-12 md:items-center justify-end"
+									>
+										<div class="flex flex-col justify-center">
+											<h4>Answer some questions to see if you're eligible</h4>
+											<p>
+												Lorem ipsum dolor sit amet consectetur adipisicing elit.
+												Architecto, tempore.
+											</p>
+										</div>
 
-							<div class="grid grid-rows-3 gap-6">
-								<div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, tempore.</div>
-								<div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, tempore.</div>
-								<div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, tempore.</div>
+										<div class="flex flex-row items-center gap-4">
+											<img src="./images/step_text.png" alt="" />
+											<p class="text-3xl">2</p>
+										</div>
+									</div>
+								</div>
+
+								<div
+									class="bg-white bg-step3_bg_mobile md:bg-step3_bg bg-no-repeat bg-cover bg-right min-h-[534px] md:min-h-[198px] p-8 rounded-xl shadow-md flex items-start md:items-center"
+								>
+									<div class="md:w-2/3 flex flex-row gap-12 md:items-center">
+										<div class="flex flex-row items-center gap-4">
+											<img src="./images/step_text.png" alt="" />
+											<p class="text-3xl">3</p>
+										</div>
+										<div class="flex flex-col justify-center">
+											<h4>Answer some questions to see if you're eligible</h4>
+											<p>
+												Lorem ipsum dolor sit amet consectetur adipisicing elit.
+												Architecto, tempore.
+											</p>
+										</div>
+									</div>
+								</div>
 							</div>
 
-							<div>
-								<button class="bttton">Find out if i am eligible</button>
+							<div class="flex justify-center mt-10">
+								<button class="button">Find out if i am eligible</button>
 							</div>
 						</div>
 					</div>
 				</div>
-			</section> -->
+			</section>
 
 			<!-- <section class="bg-[url('./images/stethoscope.png')] bg-contain bg-no-repeat bg-right-bottom border border-solid border-t-red-300 min-h-[400px]">
 				<div class="container mx-auto border-4">
@@ -379,6 +452,7 @@
 				</div>
 			</section> -->
 
+			<!-- section 9 -->
 			<section
 				class="bg-contain bg-no-repeat bg-faq-bg bg-bottom min-h-[1412px] grid gap-y-10"
 			>
@@ -461,24 +535,30 @@
 				>
 					<div class=""></div>
 					<div class="-order-1 xl:order-1">
-						<h2
+						<p class="text-base">Achieve your weight goal</p>
+						<h1 class="text-6xl capitalize text-primary w-full lg:w-2/3">
+							Tirzepatide
+							<span class="font-bold">Weight Loss</span>
+						</h1>
+
+						<!-- <h2
 							class="hidden xl:block text-[81.28pt] text-primary leading-none mb-4"
 						>
 							<span class="text-[27.09pt] text-black"
 								>Achieve your weight goal</span
 							>
 							<span class="font-light">Tirzepatide</span> Weight Loss
-						</h2>
-						<p class="text-[24.43pt] 2xl:text-[28pt] mb-4 leading-2">
+						</h2> -->
+						<p class="text-lg 2xl:text-[28pt] mb-4 leading-2">
 							Tirzepatide, the active pharmaceutical ingredient in Zepbound™,
 							has helped thousands of people successfully reduce and manege
 							their weight in conjunction with diet and exercise.
 						</p>
 
-						<p class="hidden xl:block text-[30.4pt] font-light">
+						<p class="hidden xl:block text-2xl font-light">
 							Compouned Tirzepatide Prescribed Online
 						</p>
-						<p class="hidden xl:block text-[37.41pt] font-medium">
+						<p class="hidden xl:block text-2xl font-medium">
 							for ony $499 per month
 						</p>
 						<button class="button mt-4 !hidden xl:!inline-block">
@@ -492,7 +572,7 @@
 			<footer class="bg-footer-bg bg-cover bg-no-repeat min-h-[613px]">
 				<div class="container py-32">
 					<div class="flex flex-col items-center">
-						<div class="flex flex-col items-center text-[20pt]">
+						<div class="flex flex-col items-center text-base">
 							<div class="grid grid-cols-3 divide-x-2 divide-slate-800">
 								<a href="" class="inline-block pr-2 text-right"
 									>Privacy Policy</a
@@ -502,7 +582,7 @@
 							</div>
 
 							<div
-								class="flex flex-row items-center divide-x-2 divide-slate-800 mt-4 text-[20pt]"
+								class="flex flex-row items-center divide-x-2 divide-slate-800 mt-4 text-base"
 							>
 								<span class="inline-block pr-2 text-right"
 									>Copyright 2023 Tryzepatide.com</span
@@ -511,7 +591,7 @@
 							</div>
 						</div>
 
-						<p class="text-center mt-12 text-[17pt]">
+						<p class="text-center mt-12 text-sm">
 							Lorem ipsum dolor, sit amet consectetur adipisicing elit.
 							Aspernatur magni hic commodi deserunt quis soluta placeat quo eum
 							recusandae quos dolores, nisi vitae architecto libero et eligendi

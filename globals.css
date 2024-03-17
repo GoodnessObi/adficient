@@ -44,7 +44,7 @@ h1 {
 	transition-property: transform;
 	transition-duration: 0.2s;
 	color: white;
-	font-size: 26px;
+	font-size: 1rem;
 	background-color: var(--primary);
 	border-radius: 40px;
 	text-transform: uppercase;
