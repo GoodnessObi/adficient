@@ -104,7 +104,7 @@
 			</section>
 
 			<section
-				class="bg-main-bg bg-no-repeat bg-contain mt-[-100px] min-h-[1433px]"
+				class="bg-main-bg bg-no-repeat bg-contain xl:mt-[-100px] min-h-[1433px]"
 			>
 				<!-- section 2 -->
 				<section class="bg-stools-bg bg-cover bg-no-repeat min-h-[943px]">
@@ -507,30 +507,72 @@
 			<section
 				class="bg-contain bg-no-repeat bg-faq-bg bg-bottom min-h-[1412px] grid gap-y-10"
 			>
-				<div class="container mx-auto border-4 grid grid-cols-2">
-					<div class="flex flex-row">
-						<div>
-							<img src="./images/woman_on_chair.png" alt="" />
-						</div>
-						<div>
+				<div
+					class="container py-10 bg-[#E3F2FF] flex flex-col-reverse lg:flex-row"
+				>
+					<div class="relative w-[50%] lg:w-1/2 self-end rounded-2xl">
+						<!-- <div class="w-fit"> -->
+						<img
+							src="./images/woman_on_chair.png"
+							alt=""
+							class="-scale-x-[1] lg:scale-x-[1]"
+						/>
+						<!-- </div> -->
+						<!-- <div class="absolute right-[100%] top-[50%]">
 							<img src="./images/asstonishing_results.png" alt="" />
-							<button class="button">Rush my order</button>
-						</div>
+						</div> -->
 					</div>
 
-					<div>
-						<h2>Frequently Asked Questions</h2>
-						<p>
-							Tirzepatide, the active pharmaceutical ingredient in Zepbound™,
-							has helped thousands of people successfully reduce and manege
-							their weight in conjunction with diet and exercise.
-						</p>
+					<div class="lg:w-1/2 flex flex-col justify-center">
+						<div class="flex flex-col justify-end">
+							<p>People Love Using Tryzepatide</p>
+							<h2 class="xl:w-2/3 text-5xl text-primary font-semibold">
+								Review what our users are expressing.
+							</h2>
+							<hr class="w-1/3 bg-primary opacity-50 mt-6 mb-6" />
+						</div>
 
-						<p>Compouned Tirzepatide Prescribed Online</p>
-						<p>for ony $499 per month</p>
+						<div
+							x-data="{
+							activeSlide: 0,
+							reviews: [
+								{
+									review: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores iure quas laudantium dicta impedit, est id delectus molestiae deleniti enim nobis rem et nihil.',
+									author: 'Anthony Capasso',
+									title: 'Lorem Ipsum'
+								},
+								{
+									review: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores iure quas laudantium dicta impedit, est id delectus molestiae deleniti enim nobis rem et nihil.',
+									author: 'Richard Trey',
+									title: 'Lorem Sum'
+								},
+								{
+								
+									review: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores iure quas laudantium dicta impedit, est id delectus molestiae deleniti enim nobis rem et nihil.',
+									author: 'Ann Capasso',
+									title: 'Lorem Jupsum'
+								}
+							]
+						}"
+						>
+							<!-- <template x-for="{review, index} in reviews">
+								<div
+									x-show="activeSlide === index"
+									class="p-24 font-bold text-5xl h-64 flex items-center bg-teal-500 text-white rounded-lg"
+								>
+									<p class="w-12 text-center" x-text="review.review"></p>
+
+									<div>
+										<p x-text="review.author"></p>
+										<p x-text="review.title"></p>
+									</div>
+								</div>
+							</template> -->
+						</div>
 					</div>
 				</div>
 
+				<!-- faq section -->
 				<div class="container grid xl:grid-cols-2 min-h-[1000px] py-20 gap-10">
 					<div class="flex flex-col justify-center">
 						<h2 class="xl:w-2/3 text-5xl text-primary font-semibold">
@@ -614,23 +656,23 @@
 			</section>
 
 			<!-- section10 mobile -->
-			<section class="xl:hidden">
+			<section class="xl:hidden pt-20">
 				<div class="container">
-					<h2 class="text-[81.28pt] text-primary leading-none mb-4">
-						<span class="text-[27.09pt] text-black"
-							>Achieve your weight goal</span
-						>
-						<span class="font-light">Tirzepatide</span> Weight Loss
-					</h2>
+					<div>
+						<p class="text-2xl text-black">Achieve your wWight Goal</p>
+						<h2 class="text-7xl text-primary mb-4 font-semibold">
+							<span class="font-light">Tirzepatide</span> Weight Loss
+						</h2>
+					</div>
 
-					<div class="grid grid-cols-[1.8fr_1fr] items-center pb-8">
+					<div class="grid grid-cols-[1.8fr_1fr] items-center gap-8 pb-8">
 						<div>
-							<h3 class="uppercase text-[31.07pt] font-medium">Tryzepatide</h3>
-							<p class="text-[30.4pt] font-light">
+							<h3 class="uppercase text-3xl font-semibold">Tryzepatide</h3>
+							<p class="text-3xl font-light">
 								Compouned Tirzepatide Prescribed Online
 							</p>
-							<p class="text-[37.41pt] font-medium">for ony $499 per month</p>
-							<button class="button mt-4">Order now</button>
+							<p class="text-4xl font-semibold">for ony $499 per month</p>
+							<button class="button mt-8">Order now</button>
 						</div>
 						<img src="./images/botle_straight.png" alt="" />
 					</div>
@@ -646,30 +688,24 @@
 				>
 					<div class=""></div>
 					<div class="-order-1 xl:order-1">
-						<p class="text-base">Achieve your weight goal</p>
-						<h1 class="text-6xl capitalize text-primary w-full lg:w-2/3">
+						<p class="hidden xl:block text-2xl">Achieve your weight goal</p>
+						<h2
+							class="hidden xl:block text-6xl capitalize text-primary w-full lg:w-2/3"
+						>
 							Tirzepatide
 							<span class="font-bold">Weight Loss</span>
-						</h1>
+						</h2>
 
-						<!-- <h2
-							class="hidden xl:block text-[81.28pt] text-primary leading-none mb-4"
-						>
-							<span class="text-[27.09pt] text-black"
-								>Achieve your weight goal</span
-							>
-							<span class="font-light">Tirzepatide</span> Weight Loss
-						</h2> -->
-						<p class="text-lg 2xl:text-[28pt] mb-4 leading-2">
+						<p class="text-2xl 2xl:text-[28pt] mb-4">
 							Tirzepatide, the active pharmaceutical ingredient in Zepbound™,
 							has helped thousands of people successfully reduce and manege
 							their weight in conjunction with diet and exercise.
 						</p>
 
-						<p class="hidden xl:block text-2xl font-light">
+						<p class="hidden xl:block text-3xl font-light">
 							Compouned Tirzepatide Prescribed Online
 						</p>
-						<p class="hidden xl:block text-2xl font-medium">
+						<p class="hidden xl:block text-3xl font-medium">
 							for ony $499 per month
 						</p>
 						<button class="button mt-4 !hidden xl:!inline-block">
