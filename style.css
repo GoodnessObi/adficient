@@ -602,6 +602,10 @@ video {
   bottom: 0px;
 }
 
+.bottom-\[-95px\] {
+  bottom: -95px;
+}
+
 .bottom-\[43\%\] {
   bottom: 43%;
 }
@@ -612,6 +616,10 @@ video {
 
 .left-\[-20px\] {
   left: -20px;
+}
+
+.right-0 {
+  right: 0px;
 }
 
 .right-\[-100px\] {
@@ -630,20 +638,20 @@ video {
   top: 280px;
 }
 
-.right-0 {
-  right: 0px;
+.top-\[60px\] {
+  top: 60px;
 }
 
-.bottom-\[-10px\] {
-  bottom: -10px;
-}
-
-.bottom-\[-95px\] {
-  bottom: -95px;
+.top-\[86px\] {
+  top: 86px;
 }
 
 .-z-\[1\] {
   z-index: -1;
+}
+
+.z-50 {
+  z-index: 50;
 }
 
 .-order-1 {
@@ -652,10 +660,6 @@ video {
 
 .float-right {
   float: right;
-}
-
-.m-8 {
-  margin: 2rem;
 }
 
 .mx-\[-1rem\] {
@@ -676,6 +680,11 @@ video {
 .my-4 {
   margin-top: 1rem;
   margin-bottom: 1rem;
+}
+
+.my-6 {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
 }
 
 .mb-10 {
@@ -806,8 +815,16 @@ video {
   width: 66.666667%;
 }
 
+.w-2\/5 {
+  width: 40%;
+}
+
 .w-3\/4 {
   width: 75%;
+}
+
+.w-8\/12 {
+  width: 66.666667%;
 }
 
 .w-fit {
@@ -817,14 +834,6 @@ video {
 
 .w-full {
   width: 100%;
-}
-
-.w-8\/12 {
-  width: 66.666667%;
-}
-
-.w-2\/5 {
-  width: 40%;
 }
 
 .grid-cols-2 {
@@ -940,21 +949,8 @@ video {
   border-radius: 0.75rem;
 }
 
-.border {
-  border-width: 1px;
-}
-
 .border-4 {
   border-width: 4px;
-}
-
-.border-solid {
-  border-style: solid;
-}
-
-.border-t-red-300 {
-  --tw-border-opacity: 1;
-  border-top-color: rgb(252 165 165 / var(--tw-border-opacity));
 }
 
 .bg-\[\#C7FD79\] {
@@ -979,10 +975,6 @@ video {
 
 .bg-3Step_bg {
   background-image: url('./images/picture_on_wall_bg.png');
-}
-
-.bg-\[url\(\'\.\/images\/stethoscope\.png\'\)\] {
-  background-image: url('./images/stethoscope.png');
 }
 
 .bg-bedroom-bg {
@@ -1114,6 +1106,11 @@ video {
   padding-bottom: 1.5rem;
 }
 
+.py-8 {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
 .pb-60 {
   padding-bottom: 15rem;
 }
@@ -1136,6 +1133,10 @@ video {
 
 .pt-\[119px\] {
   padding-top: 119px;
+}
+
+.pt-6 {
+  padding-top: 1.5rem;
 }
 
 .text-center {
@@ -1458,7 +1459,7 @@ h1 {
   }
 
   .md\:bg-step1_bg {
-    background-image: url('./images/step1img_bg.png');
+    background-image: url('./images/step1img.png');
   }
 
   .md\:bg-step2_bg {
@@ -1471,8 +1472,16 @@ h1 {
 }
 
 @media (min-width: 1024px) {
+  .lg\:relative {
+    position: relative;
+  }
+
   .lg\:top-\[60px\] {
     top: 60px;
+  }
+
+  .lg\:top-0 {
+    top: 0px;
   }
 
   .lg\:order-1 {
@@ -1486,6 +1495,10 @@ h1 {
 
   .lg\:\!inline-block {
     display: inline-block !important;
+  }
+
+  .lg\:\!flex {
+    display: flex !important;
   }
 
   .lg\:hidden {
@@ -1523,9 +1536,18 @@ h1 {
   .lg\:bg-center {
     background-position: center;
   }
+
+  .lg\:py-0 {
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
 }
 
 @media (min-width: 1280px) {
+  .xl\:relative {
+    position: relative;
+  }
+
   .xl\:bottom-0 {
     bottom: 0px;
   }
@@ -1534,8 +1556,12 @@ h1 {
     top: -45px;
   }
 
-  .xl\:bottom-\[-10px\] {
-    bottom: -10px;
+  .xl\:top-0 {
+    top: 0px;
+  }
+
+  .xl\:z-0 {
+    z-index: 0;
   }
 
   .xl\:order-1 {
@@ -1544,6 +1570,10 @@ h1 {
 
   .xl\:mt-\[-50px\] {
     margin-top: -50px;
+  }
+
+  .xl\:mb-0 {
+    margin-bottom: 0px;
   }
 
   .xl\:block {
@@ -1556,6 +1586,10 @@ h1 {
 
   .xl\:flex {
     display: flex;
+  }
+
+  .xl\:\!flex {
+    display: flex !important;
   }
 
   .xl\:grid {
@@ -1582,6 +1616,10 @@ h1 {
     grid-template-columns: 0.8fr 2fr 1fr;
   }
 
+  .xl\:flex-row {
+    flex-direction: row;
+  }
+
   .xl\:bg-transparent {
     background-color: transparent;
   }
@@ -1596,6 +1634,11 @@ h1 {
 
   .xl\:bg-center {
     background-position: center;
+  }
+
+  .xl\:py-0 {
+    padding-top: 0px;
+    padding-bottom: 0px;
   }
 
   .xl\:pb-0 {
