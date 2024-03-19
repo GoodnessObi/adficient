@@ -5,10 +5,11 @@ module.exports = {
 		extend: {
 			fontFamily: {
 				Montserrat: ['Montserrat, sans-serif'],
-				Poppins: ['Poppins'],
+				Poppins: ['Poppins, sans-serif'],
 			},
 			colors: {
 				primary: '#154ec6',
+				highlight_teal: '#05b6dc',
 			},
 			container: {
 				center: true,
@@ -21,14 +22,12 @@ module.exports = {
 				},
 			},
 			backgroundImage: {
-				'footer-bg': "url('./images/footer.png')",
 				'faq-bg': "url('./images/bg_curved2.png')",
 				'bedroom-bg': "url('./images/bedroom_bg.png')",
 				'livingroom-bg': "url('./images/livingroom_bg.png')",
 				'stools-bg': "url('./images/blurred-blue-stools.png')",
 				'gym-bg': "url('./images/gym_bg.png')",
 				'main-bg': "url('./images/bg_curved1.png')",
-				'hero-bg': "url('./images/hero_bg.png')",
 				running_bg: "url('./images/running_bg.png')",
 				running_bg_mobile: "url('./images/running_bg_mobile.png')",
 				'3Step_bg': "url('./images/picture_on_wall_bg.png')",
