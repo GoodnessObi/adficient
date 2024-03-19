@@ -565,30 +565,38 @@
 				class="bg-contain bg-no-repeat bg-faq-bg bg-bottom min-h-[1412px] grid gap-y-10"
 			>
 				<div
-					class="relative container py-20 bg-[#E3F2FF] flex flex-col-reverse lg:flex-row"
+					class="relative container py-20 bg-[#E3F2FF] flex flex-col-reverse lg:flex-row gap-10"
 				>
-					<!-- <img
-						src="./images/quote_white.png"
-						alt=""
-						class="absolute top-0 right-[-50px]"
-					/> -->
-					<div class="relative w-[50%] lg:w-1/2 self-end rounded-2xl">
-						<!-- <div class="w-fit"> -->
+					<div class="absolute w-[200px] top-[-35px] right-0 md:right-[90px]">
+						<img src="./images/quote_white.png" alt="" />
+					</div>
+
+					<div
+						class="flex flex-row-reverse lg:flex-row items-center lg:w-1/2 self-end rounded-2xl"
+					>
 						<img
 							src="./images/woman_on_chair.png"
 							alt=""
-							class="-scale-x-[1] lg:scale-x-[1]"
+							class="-scale-x-[1] lg:scale-x-[1] w-[50%]"
 						/>
-						<!-- </div> -->
-						<!-- <div class="absolute right-[100%] top-[50%]">
-							<img src="./images/asstonishing_results.png" alt="" />
-						</div> -->
+						<div class="w-full flex flex-col items-start lg:items-end">
+							<img
+								src="./images/asstonishing_results.png"
+								alt=""
+								class="min-w-[40%]"
+							/>
+							<img src="./images/arrow_1.png" alt="" class="lg:hidden" />
+							<img
+								src="./images/arrow_4.png"
+								alt=""
+								class="hidden lg:flex self-end"
+							/>
+							<button class="button !px-10 mt-4">order now</button>
+						</div>
 					</div>
 
-					<div class="lg:w-1/2 flex flex-col justify-center">
-						<div
-							class="w-2/3 lg:w-full flex flex-col lg:items-end lg:text-right"
-						>
+					<div class="lg:w-1/2 flex flex-col justify-center mt-10">
+						<div class="flex flex-col lg:items-end lg:text-right">
 							<p class="text-2xl">People Love Using Tryzepatide</p>
 							<h2 class="w-2/3 lg:w-full text-primary font-semibold">
 								Review what our users are expressing.
@@ -632,22 +640,52 @@
 							<div class="w-full">
 								<template x-for="(review, index) in reviews" :key="index">
 									<div x-show="activeSlide === index" class="lg:text-right">
-										<p
-											class="text-xl font-normal mb-8"
-											x-text="review.review"
-										></p>
 										<div>
-											<p
-												x-text="review.author"
-												class="text-2xl text-primary font-medium"
-											></p>
-											<p
-												class="font-normal text-lg mt-2"
-												x-text="review.title"
-											></p>
+											<div class="flex items-center gap-4">
+												<button
+													class="p-2 border-2 border-transparent hover:border-white rounded-xl"
+													x-show="activeSlide !== 0"
+													x-on:click="activeSlide = activeSlide - 1"
+												>
+													<img
+														src="./images/angle-left.svg"
+														alt=""
+														class="min-w-[35px] fill-white"
+													/>
+												</button>
+
+												<p
+													class="text-xl font-normal"
+													x-text="review.review"
+												></p>
+
+												<button
+													class="p-2 border-2 border-transparent hover:border-white rounded-xl"
+													x-show="activeSlide !== (reviews.length - 1)"
+													x-on:click="activeSlide = activeSlide + 1"
+												>
+													<img
+														src="./images/angle-right.svg"
+														alt=""
+														class="min-w-[35px] fill-white"
+													/>
+												</button>
+											</div>
+
+											<div class="mt-8">
+												<p
+													x-text="review.author"
+													class="text-2xl text-primary font-medium"
+												></p>
+												<p
+													class="font-normal text-lg mt-2"
+													x-text="review.title"
+												></p>
+											</div>
 										</div>
 									</div>
 								</template>
+
 								<div
 									class="flex flex-row items-center lg:justify-end gap-x-4 mt-8"
 								>
