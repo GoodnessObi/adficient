@@ -23,15 +23,6 @@ h2 {
 	@apply text-5xl;
 }
 
-h3 {
-}
-
-h4 {
-}
-
-p {
-}
-
 .button {
 	display: inline-flex;
 	flex-wrap: wrap;
@@ -84,7 +75,7 @@ p {
 	}
 } */
 
-@media all and (min-width: 1024px) {
+@media all and (min-width: 1200px) {
 	.section_trendy {
 		grid-template-areas:
 			'image image image image header header header header header'

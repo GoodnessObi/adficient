@@ -41,7 +41,11 @@
 					<div
 						x-show="mobileNavOpen"
 						x-cloak
-						class="absolute xl:relative flex xl:!flex flex-col xl:flex-row items-center justify-between w-full bg-white top-[86px] xl:top-0 py-8 xl:py-0 z-50 xl:z-0"
+						x-transition:enter.scale.80
+						x-transition:leave.scale.90
+						x-transition:enter.duration.500ms
+						x-transition.scale.origin.top
+						class="absolute xl:relative flex xl:!flex flex-col xl:flex-row items-center justify-between w-full bg-white top-[81px] xl:top-0 right-0 py-8 xl:py-0 z-50 xl:z-0 "
 					>
 						<div
 							class="flex flex-col xl:flex-row gap-8 items-center text-lg uppercase mb-8 xl:mb-0"
@@ -57,17 +61,23 @@
 			</header>
 			<!-- hero / section 1 -->
 			<section
-				class="pt-20 lg:pt-[119px] bg-gradient-to-b from-[#C9E5FF] min-h-[1000px]"
+				class="pt-20 lg:pt-[119px] bg-gradient-to-b from-[#C9E5FF] min-h-[1100px] lg:min-h-[1000px]"
 			>
-				<div class="container h-full grid place-items-center mt-12 lg:mt-20">
-					<div class="grid xl:grid-cols-[0.8fr_2fr_1fr]">
-						<div class="w-2/3 xl:w-full mt-8 self-end">
-							<img src="./images/bottle.png" alt="" class="" />
+				<div
+					class="relative container h-full grid place-items-center mt-12 lg:mt-20"
+				>
+					<div class="grid xl:grid-cols-[1fr_2fr_1fr]">
+						<div class="w-2/3 xl:w-full mt-8 self-end pb-8">
+							<img src="./images/botle_straight.png" alt="" class="" />
+
+							<div class="lg:hidden flex justify-center">
+								<button class="button !px-8 z-[1]">Get Started Now</button>
+							</div>
 						</div>
 
 						<div class="-order-1 xl:order-1 self-end">
 							<p class="text-base">Achieve your weight goal</p>
-							<h1 class="capitalize w-full lg:w-2/3">
+							<h1 class="capitalize w-full lg:w-3/4 tracking-wider">
 								<span class="font-light text-[52px]"> Tirzepatide </span>
 								Delivered to your door
 							</h1>
@@ -78,32 +88,29 @@
 								Weight Management Medication
 							</p>
 
-							<p class="mt-4 text-lg w-2/3 lg:w-1/2">
+							<p class="mt-4 text-xl font-medium w-2/3 lg:w-1/2 tracking-wider">
 								Get connected with a doctor who can prescribe Tirzepatide if
 								it's suitable for you
-								<span class="text-2xl text-highlight_teal font-semibold"
-									>for only $499 per month</span
+								<p class="text-3xl text-highlight_teal font-semibold tracking wider"
+									>for only $499 per month</p
 								>
 							</p>
 
-							<button class="button !hidden lg:!inline-block mt-8">
-								Get Started Now
-							</button>
+							<div class="hidden lg:block">
+							<img src="./images/arrow_1.png" alt="" class="float-left mr-[-10px]">
 
-							<div
-								class="absolute top-[450px] sm:top-[300px] lg:top-[60px] right-[-100px] w-1/6 overflow-hidden"
-							>
-								<!-- <img src="./images/hero_img.png" alt="" /> -->
+								<button class="button mt-[100px]">
+									Get Started Now
+								</button>
 							</div>
-							<!-- <div
-								class="absolute top-[780px] lg:top-[750px] right-[-50px] lg:right-[-100px] w-3/4 sm:w-1/2 overflow-hidden"
-							>
-								<img src="./images/certified2.png" alt="" />
-							</div> -->
+
+
+							<img
+								src="./images/hero_img.png"
+								alt=""
+								class="absolute h-[400px] md:h-[600px] lg:h-auto right-[-50px] lg:right-0 top-[550px] sm:top-[250px] lg:top-[-100px]"
+							/>
 						</div>
-					</div>
-					<div class="lg:hidden flex justify-center">
-						<button class="button">Get Started Now</button>
 					</div>
 				</div>
 			</section>
@@ -116,17 +123,12 @@
 					class="bg-stools-bg bg-cover bg-no-repeat bg-top lg:bg-center min-h-[943px]"
 				>
 					<div class="section_trendy container pt-40 gap-x-10">
-						<div class="relative img_container grid grid-cols-2">
-							<img
-								src="./images/body_wanted.png"
-								alt=""
-								class="absolute right-[220px]"
-							/>
-							<div></div>
+						<div class="img_container grid grid-cols-2">
+							<img src="./images/body_wanted.png" alt="" />
 							<img src="./images/woman_jeans.png" alt="" class="" />
 						</div>
 
-						<div class="heading">
+						<div class="heading mb-10">
 							<div>
 								<h2 class="text-primary font-semibold w-fill lg:w-2/3">
 									Real results without resorting to trendy
@@ -212,7 +214,9 @@
 
 								<img src="./images/botle_straight.png" alt="" />
 							</div>
-							<button class="button mt-4">check my eligibility</button>
+							<div class="flex justify-center">
+								<button class="button mt-4 !w-fit">check my eligibility</button>
+							</div>
 						</div>
 					</div>
 
@@ -220,16 +224,16 @@
 						<img
 							src="./images/quote_blue.png"
 							alt=""
-							class="absolute bottom-[43%] md:bottom-[330px] xl:bottom-0 xl:top-[-45px] left-12"
+							class="absolute hidden xl:block bottom-0 top-[-45px] left-12"
 						/>
-						<div class="grid xl:grid-cols-2">
-							<div class="grid xl:grid-cols-2 gap-x-4">
-								<img src="./images/dr.png" alt="" class="place-self-center" />
+						<div class="grid xl:grid-cols-2 gap-20">
+							<div class="grid xl:grid-cols-2 gap-x-10">
+								<img src="./images/dr.png" alt="" class="self-end" />
 
-								<div class="bg-white xl:bg-transparent py-20 mx-[-1rem] px-4">
-									<h1 class="text-3xl text-primary font-bold uppercase">
+								<div class="bg-white xl:bg-transparent py-8 mx-[-1rem] px-4">
+									<h3 class="text-3xl text-primary font-bold uppercase">
 										Doctor Recommended
-									</h1>
+									</h3>
 									<p class="text-2xl">
 										"using GLP medications to lose weight isn't cheating. it's
 										using proven science to improve your health."
@@ -243,7 +247,7 @@
 							</div>
 
 							<div class="hidden xl:grid grid-cols-2 items-center">
-								<img src="./images/bottle01.png" alt="" />
+								<img src="./images/bottle01.png" alt="" class="float-left" />
 								<div>
 									<div>
 										<h3 class="uppercase text-3xl font-bold mb-8">
@@ -252,10 +256,16 @@
 										<p class="text-2xl font-light">
 											Compouned Tirzepatide Prescribed Online
 										</p>
+										<img
+											src="./images/arrow_4.png"
+											alt=""
+											class="float-right"
+										/>
+
 										<p class="text-4xl font-medium">for ony $499 per month</p>
 									</div>
 
-									<button class="button mt-4 !px-8">
+									<button class="button mt-8 !px-8">
 										check my eligibility
 									</button>
 								</div>
@@ -285,11 +295,13 @@
 							<div
 								class="relative lg:w-1/2 flex justify-end -order-1 lg:order-1 pb-60 xl:pb-0"
 							>
-								<img
-									src="./images/drkyle_testimonial.png"
-									alt=""
-									class="absolute bottom-0 left-[-20px]"
-								/>
+								<div
+									class="absolute bottom-[-40px] left-0 lg:left-[-100px] flex flex-col items-start lg:items-center"
+								>
+									<img src="./images/arrow_2.png" alt="" />
+									<img src="./images/drkyle_testimonial.png" alt="" />
+								</div>
+
 								<img src="./images/befor-after.png" alt="" />
 							</div>
 						</div>
@@ -308,12 +320,11 @@
 					</h2>
 					<div class="flex flex-col lg:flex-row gap-10 justify-between">
 						<div class="relative flex justify-end lg:w-2/5">
-							<img
-								src="./images/easy_process.png"
-								alt=""
-								class="absolute left-[-20px] top-[-45px]"
-							/>
-							<img src="./images/woman_with_notepad.png" alt="" />
+							<div class="absolute left-0 lg:left-[-50px] top-[-50px] w-3/4">
+								<img src="./images/easy_process.png" alt="" />
+							</div>
+
+							<img src="./images/woman_with_notepad.png" alt="" class="mt-24" />
 						</div>
 
 						<div class="lg:w-3/5">
@@ -381,7 +392,14 @@
 							</div>
 
 							<div class="flex justify-center mt-10">
-								<button class="button">Find out if i am eligible</button>
+								<button class="button !px-6">
+									Find out if i am eligible
+									<img
+										src="./images/arrow-right.svg"
+										alt=""
+										class="inline-block w-4 ml-4"
+									/>
+								</button>
 							</div>
 						</div>
 					</div>
@@ -390,30 +408,27 @@
 
 			<!-- section 6 -->
 			<section class="relative py-20 min-h-[400px]">
-				<div class="container">
+				<div class="container pb-20">
 					<h2
 						class="text-4xl uppercase text-center mb-20 text-primary font-bold"
 					>
 						Licensed Doctors - Real Medication - Tangible Results
 					</h2>
 					<div class="flex flex-col lg:flex-row gap-12">
-						<div
-							class="lg:w-1/2 flex flex-row justify-between items-center gap-x-10"
-						>
+						<div class="lg:w-1/2 flex flex-row justify-end items-center gap-8">
 							<div
-								class="w-2/5 p-8 rounded-xl shadow-xl flex flex-col items-center gap-4"
+								class="w-1/2 p-4 rounded-xl shadow-xl flex flex-col items-center gap-4"
 							>
-								<div class="w-8/12 flex justify-center items-center">
-									<img src="./images/certified_alt.png" alt="" />
-								</div>
+								<img src="./images/certified_alt.png" alt="" />
 
 								<p class="text-sm text-center">
 									Attain a healthier weight with professonally approved
 									medication prescribed by a U.S Board Certified Physicians
 								</p>
 							</div>
-
-							<img src="./images//botle_straight.png" alt="" />
+							<div class="w-1/2">
+								<img src="./images//botle_straight.png" alt="" />
+							</div>
 						</div>
 
 						<div class="lg:w-1/2">
@@ -424,7 +439,7 @@
 								</h2>
 							</div>
 
-							<hr class="w-1/3 bg-primary opacity-30 mt-6 mb-6 h-1" />
+							<hr class="w-1/2 bg-primary opacity-30 mt-6 mb-6 h-1" />
 
 							<div>
 								<div>
@@ -434,10 +449,16 @@
 										reduce and manege their weight in conjunction with diet and
 										exercise.
 									</p>
+									<img
+										src="./images/stethoscope_3.png"
+										alt=""
+										class="absolute right-0 bootom-[-150px] z-[-1]"
+									/>
 
 									<p class="text-xl mt-8">
 										Compouned Tirzepatide Prescribed Online
 									</p>
+
 									<p class="text-2xl text-[#05b6dc] font-semibold">
 										for ony $499 per month
 									</p>
@@ -450,31 +471,38 @@
 						</div>
 					</div>
 				</div>
-				<img
+				<!-- <img
 					src="./images/stethoscope_3.png"
 					alt=""
 					class="absolute right-0 bottom-[-95px] 2xl:bottom-[-10px]"
-				/>
+				/> -->
 			</section>
 
 			<!-- section 7 -->
 			<section
-				class="bg-livingroom-bg bg-no-repeat bg-cover min-h-[992px] bg-[30%] lg:bg-center py-20"
+				class="bg-livingroom-bg bg-no-repeat bg-cover bg-top min-h-[992px] lg:bg-center py-20"
 			>
 				<div class="container flex flex-col lg:flex-row">
 					<div
 						class="relative w-full lg:w-3/5 flex justify-between items-baseline"
 					>
-						<img src="./images/woman_on_scale.png" alt="" />
-						<img src="./images/earned_it.png" alt="" class="absolute" />
-						<img src="./images/botle_straight.png" alt="" />
+						<div class="flex flex-row items-start">
+							<img src="./images/woman_on_scale.png" alt="" />
+							<img src="./images/earned_it.png" alt="" />
+						</div>
+
+						<img
+							src="./images/botle_straight.png"
+							class="w-1/2 lg:w-auto"
+							alt=""
+						/>
 					</div>
 
 					<div
 						class="w-full lg:w-2/5 flex flex-col justify-center lg:items-end lg:text-right"
 					>
 						<div>
-							<p class="text-4xl text-black">Brightmeds</p>
+							<p class="text-4xl text-black">Tryzepatide</p>
 							<h2 class="text-primary mb-4 font-semibold">
 								Our Mission and Commitment to You
 							</h2>
@@ -486,6 +514,12 @@
 								Our mission is to provide accessible and personalized telehealth
 								for weight management empowering individuals to take control of
 								their wellbeing.
+
+								<img
+									src="./images/certified.png"
+									alt=""
+									class="hidden lg:block float-left mr-5"
+								/>
 							</p>
 
 							<p class="text-xl mt-8">
@@ -500,14 +534,14 @@
 
 			<!-- section 8 -->
 			<section
-				class="bg-bedroom-bg bg-cover bg-no-repeat min-h-[1042px] grid place-items-center"
+				class="bg-bedroom-bg bg-cover bg-no-repeat min-h-[900px] grid place-items-center py-20"
 			>
-				<div class="container flex flex-col lg:flex-row">
+				<div class="container flex flex-col lg:flex-row gap-10">
 					<div class="w-full lg:w-1/2 flex flex-col justify-center">
 						<div>
 							<p class="text-4xl text-black">Medically Approved</p>
 							<h2 class="text-primary mb-4 font-semibold">
-								For Weght Management
+								For Weight Management
 							</h2>
 						</div>
 
@@ -538,24 +572,23 @@
 								consequuntur incidunt quidem?
 							</p>
 
-							<p class="text-xl mt-8">
+							<p class="hidden lg:block text-xl mt-8">
 								Compouned Tirzepatide Prescribed Online
 							</p>
-							<p class="text-2xl text-primary font-semibold">
+							<p class="hidden lg:block text-2xl text-primary font-semibold">
 								for ony $499 per month
 							</p>
 						</div>
 					</div>
 
-					<div class="relative grid grid-cols-2 place-items-center">
+					<div class="grid grid-cols-2 place-items-center">
 						<img src="./images/dancing_woman.png" alt="" />
-						<img
-							src="./images/body_transformation.png"
-							alt=""
-							class="absolute"
-						/>
+						<div class="w-full flex flex-col items-end">
+							<img src="./images/body_transformation.png" alt="" class="" />
+							<img src="./images/arrow_4.png" alt="" />
 
-						<button class="button">order now</button>
+							<button class="button !px-10 mr-8">order now</button>
+						</div>
 					</div>
 				</div>
 			</section>
@@ -826,7 +859,7 @@
 
 			<!-- section 10 -->
 			<section
-				class="relative -z-[1] mt-[-50px] bg-running_bg_mobile xl:bg-running_bg bg-right-bottom xl:bg-center bg-no-repeat bg-contain xl:bg-cover h-[531px] xl:h-[1121px]"
+				class="relative -z-[1] mt-[-50px] bg-running_bg_mobile xl:bg-running_bg bg-right-bottom xl:bg-center bg-no-repeat bg-contain xl:bg-cover h-[531px] xl:h-[800px]"
 			>
 				<div
 					class="container h-full grid grid-cols-[1.8fr_1fr] xl:grid-cols-2 place-items-center"
